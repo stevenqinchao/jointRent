@@ -1,0 +1,252 @@
+/* Z-INDEX */
+.formError {
+    z-index: 3201;
+}
+
+.formError .formErrorContent {
+    z-index: 3202;
+}
+
+.formError .formErrorArrow {
+    z-index: 3207;
+}
+
+.ui-dialog .formError {
+    z-index: 5000;
+}
+
+.ui-dialog .formError .formErrorContent {
+    z-index: 5001;
+}
+
+.ui-dialog .formError .formErrorArrow {
+    z-index: 5006;
+}
+
+.inputContainer {
+    position: relative;
+    float: left;
+}
+
+.formError {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+}
+
+.formError.inline {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.ajaxSubmit {
+    padding: 20px;
+    background: #55ea55;
+    border: 1px solid #999;
+    display: none;
+}
+
+.formError .formErrorContent {
+    width: auto;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ee2e27, endColorstr=#990100);/*IE<9>*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ee2e27, endColorstr=#990100)";/*IE8+*/
+    background: -webkit-linear-gradient(top,rgb(238,46,39),rgb(153,1,0));
+    background: -moz-linear-gradient(top,rgb(238,46,39),rgb(153,1,0));
+    background: -o-linear-gradient(top,rgb(238,46,39),rgb(153,1,0));
+    background: -ms-linear-gradient(top,rgb(238,46,39),rgb(153,1,0));
+    position: relative;
+    color: white;
+    min-width: 130px;
+    font-size: 1em;
+    border: 1px solid rgb(202,24,22);
+    box-shadow: 0 0 4px #777;
+    -moz-box-shadow: 0 0 4px #777;
+    -webkit-box-shadow: 0 0 4px #777;
+    -o-box-shadow: 0 0 4px #777;
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+	margin-bottom:0 !important;
+}
+
+.formError.inline .formErrorContent {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    border: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.greenPopup .formErrorContent {
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#9bda4b, endColorstr=#396900);/*IE<9>*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#9bda4b, endColorstr=#396900)";/*IE8+*/
+    background: -webkit-linear-gradient(top,#9bda4b,#396900);
+    background: -moz-linear-gradient(top,#9bda4b,#396900);
+    background: -o-linear-gradient(top,#9bda4b,#396900);
+    background: -ms-linear-gradient(top,#9bda4b,#396900);
+	border:1px solid #8fc33a;
+	color:white;
+}
+
+.blackPopup .formErrorContent {
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7171, endColorstr=#302d2d);/*IE<9>*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#7c7171, endColorstr=#302d2d)";/*IE8+*/
+    background: -webkit-linear-gradient(top,rgb(124,113,113),rgb(48,45,45));
+    background: -moz-linear-gradient(top,rgb(124,113,113),rgb(48,45,45));
+    background: -o-linear-gradient(top,rgb(124,113,113),rgb(48,45,45));
+    background: -ms-linear-gradient(top,rgb(124,113,113),rgb(48,45,45));
+    color: #FFF;
+	border:1px solid rgb(48,45,45);
+}
+
+.formError .formErrorArrow {
+    width: 15px;
+    margin: -2px 0 0 13px;
+    position: relative;
+}
+
+.blackPopup .formErrorArrow {
+	margin-top:-7px !important;
+}
+
+body[dir='rtl'] .formError .formErrorArrow,body.rtl .formError .formErrorArrow {
+    margin: -2px 13px 0 0;
+}
+
+.formError .formErrorArrowBottom {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    margin: 0px 0 0 12px;
+    top: 2px;
+}
+
+.formError .formErrorArrow div {
+    border-left: 1px solid rgb(202,24,22);
+    border-right: 1px solid rgb(202,24,22);
+    box-shadow: 0 2px 3px #444;
+    -moz-box-shadow: 0 2px 3px #444;
+    -webkit-box-shadow: 0 2px 3px #444;
+    -o-box-shadow: 0 2px 3px #444;
+    font-size: 0px;
+    height: 1px;
+    background: rgb(153,1,0);
+    margin: 0 auto;
+    line-height: 0;
+    font-size: 0;
+    display: block;
+}
+
+.formError .formErrorArrowBottom div {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.greenPopup .formErrorArrow div {
+    background: #396900;
+	border-left: 1px solid #8fc33a;
+	border-right: 1px solid #8fc33a;
+}
+
+.greenPopup .formErrorArrow .line3{
+	border-left: 1px solid #8fc33a !important;
+	border-right: 1px solid #8fc33a !important;
+	border-bottom: 1px solid #8fc33a !important;
+}
+
+.greenPopup .formErrorArrow .line2{
+	background: #8fc33a !important;
+	width:1px !important;
+}
+
+.greenPopup .formErrorArrow .line1{
+	background: #8fc33a !important;
+	width:0 !important;
+}
+
+.blackPopup .formErrorArrow div {
+    background: rgb(48,45,45);
+    color: #FFF;
+	border:1px solid #393939;
+}
+
+.blackPopup .formErrorArrow .line3{
+	border-left: 1px solid rgb(48,45,45) !important;
+	border-right: 1px solid rgb(48,45,45) !important;
+	border-bottom: 1px solid rgb(48,45,45) !important;
+}
+
+.blackPopup .formErrorArrow .line2{
+	background: rgb(48,45,45) !important;
+	width:1px !important;
+}
+
+.blackPopup .formErrorArrow .line1{
+	background: rgb(48,45,45) !important;
+	width:0 !important;
+}
+.blackPopup .formErrorArrow .line10 {
+    width: 15px;
+    border: none;
+}
+
+.formError .formErrorArrow .line10 {
+    border: none;
+}
+.formError .formErrorArrow .line9 {
+    width: 13px;
+    border: none;
+}
+
+.formError .formErrorArrow .line8 {
+    width: 11px;
+}
+
+.formError .formErrorArrow .line7 {
+    width: 9px;
+}
+
+.formError .formErrorArrow .line6 {
+    width: 7px;
+}
+
+.formError .formErrorArrow .line5 {
+    width: 5px;
+}
+
+.formError .formErrorArrow .line4 {
+    width: 3px;
+}
+
+.formError .formErrorArrow .line3 {
+    width: 1px;
+    border-left: 2px solid rgb(202,24,22);
+    border-right: 2px solid rgb(202,24,22);
+    border-bottom: 0 solid rgb(202,24,22);
+}
+
+.formError .formErrorArrow .line2 {
+    width: 3px;
+    border: none;
+    background: rgb(231,43,41);
+}
+
+.formError .formErrorArrow .line1 {
+    width: 1px;
+    border: none;
+    background: rgb(231,43,41);
+}

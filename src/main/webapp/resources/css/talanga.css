@@ -1,0 +1,3365 @@
+/*modal CSS*/
+#basic-modal-content {
+    display: none;
+}
+
+/* Overlay */
+#simplemodal-overlay {
+    background-color: #000;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* Container */
+#simplemodal-container .simplemodal-data {
+    /* padding: 8px; */
+    background-color: #fff;
+}
+
+#simplemodal-container code {
+    background: #141414;
+    border-left: 3px solid #65B43D;
+    color: #bbb;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+    padding: 4px 6px 6px;
+}
+
+#simplemodal-container a {
+    color: #3A5C78;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#simplemodal-container a.modalCloseImg {
+    background: url(../../img/close.png) no-repeat;
+    width: 25px;
+    height: 29px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+#simplemodal-container h3 {
+    color: #84b8d9;
+}
+
+/*alphabetical CSS*/
+.navList {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    background-color: #bcd5e6;
+    text-align: left;
+    clear: both;
+    list-style: none;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.navList a:hover {
+    text-decoration: underline !important;
+    cursor: pointer
+}
+
+.buttonStyle {
+	width: 25px;
+    width: 33px \9;
+    height: 25px;
+}
+
+.DialogIconWarn {
+    background: url("../../img/icons/warn.png") no-repeat 0px top;
+}
+
+.DialogIconConfirm {
+    background: url("../../img/icons/confirm.png") no-repeat 0px top;
+}
+
+.DialogIconSuccess {
+    background: url("../../img/icons/success.png") no-repeat 0px top;
+}
+
+.cursorStyle {
+    cursor: pointer;
+}
+
+/*
+ * common modal style added by Heather
+ */
+/*float element to left when there are more than one element in one line*/
+.fl {
+    float: left;
+}
+
+/*float element to right*/
+.fr {
+    float: right;
+}
+
+/*make content hide when it beyonds the height of parents box */
+.ofh {
+    overflow: hidden;
+}
+
+/*define two css attributes of the scrollbar,
+ * height and max-height need to define in
+ * a centain css which want to have scrollbar
+ */
+.overfxh {
+    overflow-x: hidden !important;
+    overflow-y: auto !important
+}
+
+/*define margin to top to a certain value*/
+.mt {
+    margin-top: 10px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+/*define margin to top to 0 if one element dont want to set margin top* */
+.mt0 {
+    margin-top: 0px !important;
+}
+
+/*define margin to bottom to 0 if one element dont want to set margin top* */
+.mb0 {
+    margin-bottom: 0px !important;
+}
+
+.mb10 {
+    margin-bottom: 10px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+/*define the margin bottom of the sub div to 0 when the parent element call the class  */
+.mb0 div {
+    margin-bottom: 0 !important;
+}
+
+/*define margin to left to a certain value*/
+.ml {
+    margin-left: 10px;
+}
+
+.ml20{
+    margin-left: 20px;
+}
+
+/*define margin to right to a certain value*/
+.mr10 {
+    margin-right: 10px;
+}
+
+/*define the max-width to 0*/
+.maxwn {
+    max-width: none !important;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mrp5 {
+    margin-right: 5%;
+}
+
+.mrp10 {
+    margin-right: 10%;
+}
+
+/*define padding to a certain value*/
+.pd0 {
+    padding: 0 !important;
+}
+
+/*define the max-width to 0*/
+.maxwn {
+    max-width: none !important;
+}
+
+/*define display to inline-block to make the poping up calendar align with the input*/
+.displayib {
+    display: inline-block;
+}
+
+/*common modal style*/
+.textar {
+    text-align: right;
+}
+
+/*define text align to left as default*/
+.textal {
+    text-align: left;
+}
+
+
+/*scaling-down image as per screen size */
+.scalingImg {
+    max-width: 100%;
+    text-align: right;
+}
+
+.scalingImg img {
+    max-width: 100%;
+    /*height:auto;
+     display:block;
+     overflow:hidden;
+     width:expression(this.width > 200 ? "200px" : this.width)!important;*/
+    width: auto;
+}
+
+.textac {
+    text-align: center;
+}
+
+/*define the font-size of h2 to 16px*/
+h2 {
+    font-size: 16px;
+}
+
+/*define the cursor attribute to pointer when a hover*/
+a:hover {
+    cursor: pointer;
+}
+
+/**
+ * remove `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+    outline: 0;
+}
+
+/*remove the list style of ul,li*/
+ul,li {
+    list-style: none;
+}
+
+/*common modal style*/
+ul {
+    padding: 0 !important;
+}
+
+/*define the margin bottom to make every sub div have a space*/
+.pageContent div {
+    margin-bottom: 12px;
+}
+
+.pageContent {
+    height: auto;
+    min-height: 250px;
+}
+
+/*common modal style defination for input label select*/
+input,label,select {
+    display: inline-block;
+    width: auto;
+    padding: 2px;
+    margin-right: 5px;
+    color: #B3B1B2;
+    /*vertical-align: middle;*/
+}
+
+input {
+    border: 1px solid #ABADB3;
+    background: none;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+input[type="radio"],input[type="checkbox"] {
+    border: 0px !important;
+}
+
+/*certain layout for select*/
+select {
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    background: none;
+    border: 1px solid #ABADB3;
+    /*width: 146px;*/
+}
+
+/*clear TR background color*/
+.clearTrColor table tbody tr:nth-child(2n) {
+    background: none;
+}
+
+/*define common border*/
+.border {
+    border: 1px solid #A7ABB4;
+}
+
+/*define table layout to fixed to make sure table td width is regular width*/
+.tablelayout {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+/* 
+ * end common modal style
+*/
+
+/*Initiate a Review Process*/
+.setHr select {
+    margin: 8px 5px !important;
+}
+
+.selectArrow {
+    position: relative;
+}
+
+.selectArrow span {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.selectSteps .selectStepsUL li {
+    width: 223px;
+    float: left;
+}
+
+.selectStepsUL {
+    padding-left: 12px;
+}
+
+.selectStepsUL li:first-child {
+    margin-top: 13px;
+}
+
+.selectStepsUL label {
+    width: auto;
+    max-width: none;
+}
+
+.selectEmail label,.selectEmail table,.selectEmail span {
+    max-width: none;
+    font-size: 12px;
+}
+
+.assignEmployees #hiddenBox {
+    height: auto;
+    max-height: 100px;
+    width: 150px;
+}
+
+.adminCon {
+    position: relative;
+    width: 280px;
+    height: 150px;
+}
+
+.adminConP {
+    position: absolute;
+    bottom: 0px;
+    left: 125px;
+}
+/*end Initiate a Review Process*/
+
+/*tab selector*/
+.tabSelector {
+    position: relative;
+}
+
+.tabSelectorContent {
+    margin-left: 300px;
+}
+
+.tabSelector table {
+    /*
+	float:left;
+		width:44%;
+		margin-top:-61px;
+		margin-right:10px;*/
+    
+}
+
+.tabSelector .tableHeight {
+    position: absolute;
+    right: 38%;
+    top: 0px;
+    width: 30%;
+}
+
+.tabSelector .groupMembers {
+    position: absolute;
+    right: 10%;
+    top: 0px;
+    width: 30%;
+}
+
+/*employee inner style*/
+#excludeLockInfo label,#editEmpTopLayout label {
+    width: 240px;
+}
+
+#excludeLockInfo span,#editEmpTopLayout span {
+    width: 150px;
+    margin-right: 8px
+}
+
+#editEmpTopLayout select {
+    width: 150px;
+    margin-right: 20px
+}
+
+.employeeCommon table select {
+    width: 150px;
+}
+
+.employeeCommon table input {
+    width: 144px;
+}
+
+.employeeCommon table label {
+    white-space: nowrap;
+}
+
+.employeeCommon .picker__table tbody tr:nth-child(2n) {
+    background-color: #808080;
+}
+
+.employeeCommon .picker__table div {
+    margin-bottom: 0;
+}
+
+/* add By Alice for Clip Icon */
+.download-icon {
+    background: url("../../img/icons/paperclip.png") no-repeat;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+/*************** journal in home page **************/
+
+.journal {
+	padding: 8px 10px 3px 15px;
+}
+
+.journal .picker {
+    width: 150%;
+}
+
+ul#exportByYear li a {
+    white-space: nowrap;
+    display: table-cell;
+}
+
+.JournalDiv {
+    height: 100%;
+    overflow: hidden;
+}
+
+.JournalTable {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+table.JournalTable tbody tr:nth-child(2n) {
+	background:none;
+}
+.JournalTable tr {
+	border-bottom: 1px dotted #606060;
+}
+
+.JournalTable td {
+	padding-top: 5px !important;
+}
+
+.JournalTime {
+    color: #808080;
+    padding: 0px !important;
+}
+
+.workJournal {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.workJournalIcon {
+    display: inline;
+}
+
+.workJournalIcon img {
+    padding: 0 6px;
+}
+
+.workJournal ul {
+    width: auto;
+    max-width: 55px;
+    position: absolute;
+    background: white;
+    z-index: 111;
+	overflow:visible !important;
+}
+
+.workJournal ul li {
+	min-width: 40px !important;
+	background:none !important;
+}
+
+.workJournal ul li a{
+	color:#333 !important;
+}
+
+/* **************************portlet**************************** */
+.portlet {
+    margin: 0 0 0 0;
+}
+
+.portlet-header .ui-icon {
+    float: right;
+}
+
+.ui-sortable-placeholder {
+    border: 0px dotted black;
+    visibility: visible !important;
+    height: 50px !important;
+}
+
+.ui-sortable-placeholder * {
+    visibility: hidden;
+}
+
+.homePageBackground {
+    background: none !important;
+}
+
+.portlet-left {
+    margin: 0 0 0 0;
+}
+
+.portlet-header-left .ui-icon {
+    float: right;
+}
+
+.portlet-header-height {
+    height: 30px;
+    overflow: hidden;
+}
+
+/*end tab selector*/
+
+/* 
+ UI Configuration added by Heather
+ */
+.UIConfiguration,.editUIConfiguration {
+    width: 73%;
+}
+
+.UIConfiguration label {
+    width: 115px;
+}
+
+.UIConfiguration .headerStyle label {
+    width: 187px;
+}
+
+.headerDisplay {
+    max-height: 100px;
+    height: auto;
+}
+
+.editUIConfiguration label,.editUIConfiguration select {
+    width: 120px;
+}
+
+.editUIConfiguration .headerStyle label {
+    width: 150px;
+}
+
+/* editDashBoard table head width and align center */
+.editDashBoardThRole {
+    width: 15%;
+    text-align: center;
+}
+/* editDashBoard table head width */
+.editDashBoardThFunName {
+    width: 30%;
+}
+
+/* editDashBoard table tr height */
+.editDashBoard table tbody tr td {
+    padding: 3px 1px 2px 4px;
+}
+
+.ui-front {
+    z-index: 100000 !important;
+}
+/*end tab selector*/
+
+/*common popup window css*/
+#popup {
+    font-size: 12px;
+    background-color: lightgray;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .16);
+    width: auto;
+    max-width: 100%;
+    border-radius: 1px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #5B585B;
+}
+
+#popup .titlebar {
+    background: #396e8e
+        url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5NmU4ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iIzMzNjg4OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzIyNTc3NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxOTRlNmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: linear-gradient(to bottom, #396E8E 0%, #336888 29%, #225777 67%, #194E6E 100%) repeat scroll 0 0 transparent;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-weight: normal;
+    position: relative;
+    margin: 1px !important;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font: 18px 'league_gothicregular',sans-serif;
+}
+
+.spanElement {
+    cursor: pointer;
+}
+
+#popup input,#popup textarea,#popup select {
+    border-radius: 3px;
+    border: 1px solid #999;
+    width: 80%;
+    max-width: 80%;
+    margin-left: 0px;
+    padding: 4px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, .16) inset;
+    background-color: #ffffff;
+    color: #5B585B;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    line-height: 13px \9;
+    /* changed 20px to 13px to debug the ie problem in main page*/
+}
+
+#popup select option {
+    background-color: #ffffff;
+}
+
+#popup input[type='checkbox'],#popup input[type='radio'] {
+    height: auto;
+    width: auto;
+    padding: 0px \9;
+}
+
+#popup input#progress {
+    width: auto !important;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+#popup label#status {
+    width: auto;
+    text-align: left;
+    margin-right: 15px;
+}
+
+#popup #date {
+    width: 30%;
+    padding-right: 30px;
+}
+
+#popup .formcontainer {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #3A5C78;
+}
+
+#popup label,.spanElement {
+    font-size: 12px;
+    width: 13%;
+    text-align: right;
+    display: inline-block;
+    /* vertical-align: top; */
+    /* padding-top: 0; */
+    font-family: arial, sans-serif;
+    color: #5B585B;
+    font-weight: bold;
+}
+
+#popup .savetext a:link:first-child {
+    background: none;
+}
+
+#popup .savetext a:link {
+    text-transform: uppercase;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    font: 12px/14px 'league_gothicregular', sans-serif;
+    height: 14px;
+    color: #396E8E;
+    padding: 1px 0 0 8px;
+    margin-bottom: 4px;
+    background: url(../../img/theme_one/home-divider-2.png) no-repeat left center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#popup .savetext {
+    text-align: right;
+}
+
+#popup table tbody {
+    font-size: 1.15em;
+    color: #194E6E;
+}
+
+#popup .show-download-icon {
+    background: url("../../img/icons/paperclip.png") no-repeat !important;
+    width: 16px;
+}
+
+/*end common popup window css*/
+
+/* calender css*/
+.picker__holder table tbody {
+    color: #194E6E;
+    font-size: 1em;
+}
+
+.picker__weekday {
+    font-size: 1em !important;
+}
+
+.picker {
+    color: #194E6E;
+    font-size: 1em !important;
+}
+
+/*about me style*/
+.aboutmeStats {
+    /* display:inline-block; */
+    display: block; /*define the upload file showing in the next line*/
+}
+
+.aboutmeform #file_browse_here {
+    padding-top: 4px;
+    width : auto;
+}
+#popup .aboutmeform .download label{
+    width : auto;
+}
+ul.stats li label {
+    word-wrap: break-word;
+}
+
+.aboutmeImage {
+    max-width: 199px;
+}
+
+.widgetImage {
+    width: 100px;
+}
+/*end*/
+
+/*eduction accordion*/
+.educationContent strong{
+	color:#fff;
+}
+.educationContent label {
+	max-width:250px;
+}
+.educationContent input {
+	max-width:115px;
+	color: #fff !important;
+}
+.educationContent li {
+	line-height:25px;
+}
+/*end*/
+
+/*goals details*/
+.submenucommon li {
+    padding: 4px;
+}
+
+.submenucommon li:hover {
+    background: #ffffff;
+}
+
+.submenucommon li a:hover {
+    text-decoration: none;
+}
+
+.currentGoal {
+    height: auto;
+    max-height: 150px;
+}
+
+.editGoalsT {
+    width: 80%;
+    !
+    important
+}
+
+.normalGoalsT {
+    width: 40%;
+}
+
+.selectGroupMargin {
+    margin-left: 50px;
+}
+
+#goalFormTemplate {
+    margin-top: 10px;
+    width: 45%;
+}
+
+.goalSelector {
+    width: 50%;
+}
+
+.createNewDiv {
+    width: 40%;
+}
+
+.addToList {
+    width: 40%;
+}
+
+.save {
+    width: 90%;
+}
+
+.select {
+ width: 20%;
+ position:relative;
+}
+
+.select ul {
+ width: 90%;
+ position:absolute;
+}
+
+#orgGoalForm label {
+    max-width: none;
+    width: 160px;
+}
+
+/*end goals details*/
+.employeeCommon table label {
+    white-space: nowrap;
+}
+
+#loginAsNewEmp {
+    margin: 17px 0 0 150px;
+}
+
+/*multiple Employee style*/
+#resultPanel {
+    margin-left: 7%;
+    width: 50%;
+}
+
+#empGroups {
+    padding: 10px;
+}
+
+/* Goals menu style */
+.btn {
+    display: inline-block;
+    *display: inline;
+    padding: 2px 8px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    line-height: 20px;
+    color: #333333;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+    margin-top: 8px;
+    margin-left: 0;
+}
+/*end Goals menu style */
+
+/*report related style added by Heather*/
+/*.reportItema li{
+	float:left;
+	padding:0 15px;
+}
+.reportItema li input[type='radio'], .reportItema li span{
+	margin:0 15px;
+	float:left;
+}
+.reportItema li input[type='radio']{
+	height:256px;
+}*/
+.reportWR {
+    width: 90%;
+}
+
+.reportItema {
+    padding: 15px;
+}
+
+.reportItema input[type='radio'],.reportItema span {
+    margin: 0 7px;
+}
+
+.reportItema img {
+    width: 200px;
+}
+
+.reportItema input[type='text'],.reportItema select {
+    width: 15%;
+}
+
+.reportItema label {
+    width: 13%;
+}
+
+.reportVertical {
+    float: left;
+    width: 30%;
+}
+
+.reportVertical label {
+    width: 40%;
+}
+
+.reportVertical select {
+    width: 50%;
+}
+
+.reportVertical input[type="text"] {
+    width: 48%;
+}
+
+.reportRadioA input[type='radio'] {
+    height: auto;
+}
+
+.reportMarTop {
+    margin-top: 10%;
+}
+
+.reportTa td {
+    border: 1px solid #A7ABB4;
+}
+
+.reportTa td:nth-child(2n-1) {
+    background: none;
+}
+
+.reportTa tr:nth-child(2n) {
+    background: none;
+}
+
+.reportScrolla {
+    height: auto;
+    max-height: 100px;
+}
+
+.ReportWa {
+    width: 50%;
+}
+
+.createReportTempAHover .textar a.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.createReportTempAHover .textar a:hover,.textar a:focus {
+    text-decoration: none !important;
+    color:#333;
+}
+
+.createReportTempAHover .textar a:active {
+    background:#F5F5F5;
+}
+
+/* start for addNotification page */
+.heightAuto {
+    height: auto;
+}
+
+.ft16 {
+    font-size: 16px;
+}
+
+.addNotification textarea {
+    height: 180px;
+    width: 75%;
+    margin-left:13px;
+}
+
+.addNotification {
+    min-height: 500px;
+    width: 75%;
+    position: relative;
+}
+
+/*end Goals menu style */
+
+/* Congigure Archived */
+.configureArchived {
+    width: 55%;
+    height: 400px;
+}
+
+.configureArchived label {
+    min-width: 25%;
+    max-width: 35%;
+    padding: 10px 10px 0px;
+}
+
+.configureArchived select {
+    width: 30%;
+}
+
+.configureArchived table tr td {
+    min-width: 8%;
+}
+
+.congigureArchivePadding {
+    padding: 10px 0px 10px 40px;
+}
+
+.archivePadding {
+    padding: 8px 10px;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.tab_container {
+    overflow: hidden;
+}
+
+/*end Congigure Archived */
+
+/* user list fields*/
+.userList table td {
+    white-space: nowrap;
+}
+
+.userList table td:first-child {
+    width: 175px;
+}
+
+.userListScroll {
+    overflow: scroll;
+    max-height: 150px;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+/*widgets add by Emily*/
+.per2 {
+    width: 2%;
+}
+
+.per30 {
+    width: 30%;
+}
+
+.padLeft5 {
+    padding-left: 5px;
+}
+
+.listTable {
+    height: auto;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*end widgets add by Emily*/
+
+/* Version style */
+.versionStyleCenter {
+    text-align: center;
+    width: 100%;
+}
+
+.versionStyleRight {
+    text-align: center;
+    margin: -2px;
+    float: right;
+}
+/*end version style*/
+
+/***start process in progress***/
+.ProcessITa {
+    height: auto;
+    max-height: 100px;
+}
+
+.ProcessITb {
+    width: 70%;
+}
+
+.processDataI img,.ProcessITa img {
+    width: 18px;
+    height: 18px;
+}
+
+.disableDivFont {
+    color: #AAAAAA !important;
+}
+
+/*Form style details*/
+.copyFormTa {
+    height: auto;
+    max-height: 200px;
+}
+
+.formLeftW {
+    width: 59%;
+}
+
+.formRightW {
+    width: 41%;
+}
+
+#formPreviewStyle {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.formPreviewPadding {
+    padding: 110px 0 5px;
+}
+
+.copyFormTb {
+    width: 80%;
+}
+
+.editFormW {
+    width: 60%;
+}
+
+.deleteFormTa {
+    height: auto;
+    max-height: 150px;
+}
+
+.deleteFormW {
+    width: 40%;
+}
+
+.formSubmitA {
+    border: 0;
+    color: #3A5C78;
+    font-family: 'TeXGyreAdventorBold', Arial, Helvetica, sans-serif;
+}
+
+.formSubmitA:hover {
+    text-decoration: underline;
+}
+
+.startPageA {
+    width: 72%;
+}
+
+.formAlign label {
+    width: 15%;
+}
+
+.startPageB label {
+    width: 26%;
+}
+
+.startPageA label {
+    width: auto !important;
+}
+
+.copyFormAlign label {
+    width: 25%;
+}
+
+.formLogo {
+    width: 100px;
+    height: 30px;
+}
+
+.normalSectionsT {
+    width: 40%;
+}
+
+.sectionScroll {
+    max-height: 150px;
+    height: auto;
+}
+
+.expand {
+    display: block;
+    font-size: 16px;
+    margin: 19px 0 0 4px;
+}
+
+.arrowPosition {
+    position: relative;
+    min-height: 150px;
+    width: 2%;
+    padding: 0 5px;
+}
+
+.arrowPosition img:first-child {
+    position: absolute;
+    top: 50%;
+}
+
+.arrowPosition img:last-child {
+    position: absolute;
+    top: 70%;
+}
+
+.editFormW #formProperties .expand {
+    margin: 13px 0 0 4px;
+}
+/* section css */
+#sectionTitle {
+    width: 40%;
+    margin-left: 50px;
+}
+
+#sectionDescription {
+    background: none;
+    width: 400px;
+    margin-left: 50px;
+}
+
+#competenciesTable tbody tr input {
+    width: 98%;
+    border-width: 0px;
+}
+
+#scaleTable tbody tr td input {
+    width: 95%;
+}
+
+.verticalImage {
+    margin-top: 13%;
+}
+
+.verticalImage img {
+    display: block;
+}
+
+#visible {
+    margin-left: 100px;
+}
+
+.dataTable thead th {
+    white-space: normal;
+}
+
+/*talent search*/
+.talentSearchFormat {
+    width: 70%;
+}
+
+/*Group Goal Name color*/
+.groupName {
+    color: black !important;
+}
+
+/*************related processes style added by Heather*********************/
+
+/*left navigation style*/
+body.webkit #center ul.submenu li.first a:hover,body.webkit #center ul.submenu li.first a {
+    border-radius: 8px 0 0 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+body.webkit #center ul.submenu li.last a {
+    border-radius: 0 8px 0 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+#center ul.submenu li {
+    float: none;
+}
+
+#center ul.submenu li.first a {
+    border-left: 0 none;
+    margin-left: 0;
+}
+
+#center ul.submenu li.last a {
+    border-right: 0 none;
+}
+
+#center ul.submenu li a.active {
+    z-index: 7;
+}
+/*end left navigation style*/
+
+/*initiate hiring/review process*/
+.demofl li {
+    float: left;
+    width: 30%;
+}
+
+.labelMargin input {
+    margin-left: 15px;
+}
+
+.competenciesTable input[type="text"] {
+    width: 80px;
+}
+
+#center ul.submenu,#center ul.submenu li,#center ul.submenu li a {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.cursorI img {
+    cursor: pointer;
+}
+
+.clickEmailContent {
+    margin-left: 20px;
+}
+
+.subNavTitle {
+    border-bottom: 1px solid #a49a7a;
+}
+
+.relatedProcess label {
+    /* width: 150px; */
+    
+}
+
+#center .relatedProcess ul.tabs li a {
+    padding: 4px 10px !important;
+}
+
+.relatedProcess select {
+    width: 100px;
+}
+
+.selectSteps .selectStepsUL li {
+    width: 210px;
+    float: left;
+}
+
+.selectSteps .selectStepsUL li:first-child {
+    width: 280px;
+}
+
+.selectStepsUL {
+    padding-left: 12px;
+}
+
+.selectStepsUL li:first-child {
+    margin-top: 13px;
+}
+
+.selectStepsUL span {
+    margin: 0 5px;
+    display: block;
+}
+
+.selectStepsUL label {
+    width: auto;
+    max-width: none;
+}
+
+.selectEmail label,.selectEmail table,.selectEmail span {
+    max-width: none;
+    font-size: 12px;
+}
+
+.adminCon {
+    position: relative;
+    width: 280px;
+    height: 150px;
+}
+
+.adminConP {
+    position: absolute;
+    bottom: 0px;
+    left: 125px
+}
+
+.setHr select {
+    margin: 8px 5px !important;
+}
+
+.selectArrow {
+    position: relative;
+}
+
+.selectArrow span {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.assignEmployees #hiddenBox {
+    height: auto;
+    max-height: 100px;
+    width: 150px;
+}
+/*************end related processes style added by Heather*********************/
+
+/*for table pagination */
+.tableLayout td {
+    word-wrap: break-word;
+}
+
+#tablePagination img {
+    padding: 0px 2px;
+}
+
+#tablePagination_perPage {
+    display: none;
+}
+
+#tablePagination_paginater input {
+    width: 30px;
+    height: 11px;
+    line-height: 11px;
+}
+
+#tablePagination_paginater img {
+    width: 10px;
+    padding-bottom: 2px;
+}
+
+#tablePagination_paginater img:hover {
+    cursor: pointer;
+}
+
+#tablePagination_paginater img#tablePagination_prevPage,#tablePagination_paginater img#tablePagination_nextPage {
+    width: 8px;
+}
+/*end table pagination */
+
+/*form appearance*/
+.formViewLogo {
+    max-height: 100px;
+}
+
+.workflowTable {
+    max-width: 960px;
+    overflow-x: auto;
+    word-wrap: noraml;
+    margin-bottom: 30px;
+}
+/*end*/
+.commentBox {
+    width: 50%;
+    height: 50px
+}
+
+/*table home pagination*/
+div.pager {
+    margin-left: 5px;
+    float: left;
+    width: 50%;
+    padding-top: 2px;
+}
+
+div.pager span {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.0;
+    text-align: center;
+    cursor: pointer;
+    background: #ccc;
+    color: #3A5C78;
+    margin-right: 0.5em;
+    padding-top: 2px;
+}
+
+div.pager span.active {
+    background: #3A5C78;
+    color: #fff;
+}
+/*end table home pagination*/
+.successionPlanSelectWidth {
+    width: 30% !important;
+}
+
+/********************define header style added by Heather************************/
+.headerPartOne {
+    width: 50%;
+    margin-top: 13px;
+    display: none;
+}
+
+.headerPartTwo {
+    min-width: 25%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: none;
+}
+
+.headerPartThree {
+    width: 40%;
+    display: none;
+}
+
+/*define my employee dropdown style*/
+.MainEmployeeInfo {
+    margin-bottom: 15px;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.myEmplySelBack {
+    color: #fff;
+    background: #001E3A;
+}
+/*end define my employee dropdown style*/
+
+/*define upload button style*/
+.upload .button {
+    padding: 2px;
+    min-width: 52px;
+    line-height: 0.9;
+}
+
+.download {
+    width: 100% !important;
+}
+
+/*added style to configure system by Heather*/
+.configureSystem input[type='checkbox'] {
+    vertical-align: text-bottom;
+}
+
+.aboutMeTabs:hover {
+    cursor: pointer;
+}
+
+.configurationScroll {
+    max-height: 150px;
+}
+
+.item-content li {
+    margin: 6px 0;
+}
+
+/*add one style to table sorter*/
+table.tablesorter thead tr .header {
+    padding-right: 15px;
+}
+/*end add one style to table sorter*/
+
+/*update ui icon style width*/
+#leftGadget .ui-icon,#rightGadget .ui-icon {
+    height: 22px;
+    width: 19px;
+}
+
+.labelWrap {
+    width: 940px;
+    word-wrap: break-word;
+}
+
+.labelWrapTable {
+    width: 940px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillSearchPageContent div {
+    margin-bottom: 25px;
+}
+
+.wordEllipsis {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#simplemodal-container {
+    max-height: 600px;
+    width: 608px;
+    height:200px;
+    border: 0px solid #444;
+    padding: 0px;
+    color: #3A5C78;
+}
+
+.navList {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    clear: both;
+    list-style: none;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #E2DED3;
+    border-color: #3A5C78;
+}
+
+.widget-header-color {
+    font-weight: bold color:    #ffffff background-color:   
+			 #3A5C78 !important;
+}
+
+.whatIDoContentStyle,.formRspNotesStyle {
+    border: 0px solid #ABADB3 !important;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    color: #CEC9CC !important
+}
+
+ul.stats li label {
+    min-width: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    color: #B3B1B2;
+}
+
+.submenucommon {
+    position: absolute;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: #AC7E14;
+    background-color: #3A5C78;
+}
+
+.specify {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.tableHeaderStyle {
+    overflow: hidden;
+    padding-left: 10px;
+    height: 25px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 0px;
+    background-color: #3A5C78;
+}
+
+.lableStyle {
+    line-height: 1.4;
+}
+
+#center ul.submenu {
+    display: block;
+    border-radius: 8px 8px 8px 8px;
+    overflow: hidden;
+    background-color: #3A5C78;
+}
+
+#center ul.submenu li a {
+    padding: 8px 8px !important;
+    margin-left: -1px;
+    -moz-transition: background-color .7s;
+    transition: background-color .7s;
+    position: relative;
+    z-index: 5;
+    min-height: 17px;
+    font-size: 1.2em;
+    border-top: 1px solid #afaa99;
+    border-left: 1px solid #afaa99;
+    border-right: 1px solid #afaa99;
+    color: #fff;
+    background-color: #A49A7A;
+}
+
+#center ul.submenu li a:hover,#center ul.submenu li a.active {
+    text-decoration: none;
+    z-index: 6;
+    box-shadow: 0 -14px 12px -2px rgba(0, 0, 0, .1);
+    background-color: #3A5C78;
+}
+
+.announcement-copy ol li,#skill_search h2,.journal h2,.links-homePage h2 {
+    font-size: 1.25em;
+    margin-top: 0;
+    color: #666666;
+}
+
+body.login .form-item-text label,body.login .form-item-checkbox,body.login .form-item-submit {
+    margin-top: 0;
+    color: #666666;
+}
+
+.ui-widget-header {
+    color: #ffffff;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #396E8E 0%, #336888 29%, #225777 67%, #194E6E 100%) repeat scroll 0 0 transparent;
+}
+
+h2.myToDoLabelStyle {
+    padding: 0px 0px 3px 5px;
+    margin: 0px;
+    color: #3A5C78;
+}
+
+.bio-section-left h3.job-title {
+    margin-top: 0;
+    color: #666666;
+}
+
+.sidebar h3.job-title {
+    margin: 0 0 5px 0;
+    color: #666666;
+}
+
+ul.stats li span.value {
+    display: inline-block;
+    /*  color: #666666; */
+    padding: 3px 0;
+}
+
+#MyJobSuccessionArea tr td label,.bio-section-right p label {
+    color: #194E6E;
+    font-weight: bold;
+}
+
+.whatIDoContentEditStyle {
+    border: 1px solid #ABADB3;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    color: #ffffff !important;
+}
+
+.myLinkButtonStyle {
+    background-image: url("../../img/ui-icons_ffffff_256x240.png");
+    height: 16px !important;
+    float: right;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+    width: 16px;
+}
+
+.myLinkAddButtonStyle {
+    background-position: -32px -128px;
+    margin-top: -21px;
+    margin-right: 25px;
+}
+
+.myLinkDelButtonStyle {
+    background-position: -64px -128px;
+    margin-top: -20px;
+    margin-right: 5px;
+}
+
+/*header logo*/
+.logo {
+    text-indent: -9999px;
+}
+
+body.login #center {
+    /* TO DO */
+    /* background: url("../../img/theme_one/shadow-2.png") no-repeat scroll 0 0 / 100% auto transparent; */
+    /* margin: -52px auto 0; */
+    margin: -85px auto 0;
+    padding: 10px 0;
+    position: relative;
+    width: 50%;
+    z-index: 2;
+}
+
+#content .holder {
+    overflow: hidden;
+    padding: 20px 9px;
+    margin: 0 10px;
+    background: #5b5d60;
+}
+
+#content .login-form .holder {
+    overflow: visible;
+}
+
+#content .holder:before {
+    background: url("../../img/theme_one/shadow-1.png") no-repeat scroll 0 0 transparent;
+    left: -8px;
+}
+
+#content .holder:after {
+    background: url("../../img/theme_one/shadow-3.png") no-repeat scroll 0 0 transparent;
+    right: -8px;
+}
+
+.login-form {
+    width: auto;
+    padding: 10px 0;
+    margin: -35px -19px;
+    background: url("../../img/theme_one/shadow-2.png") no-repeat;
+    background-size: 100%;
+}
+
+.login-form .frame {
+    border: 1px solid #515257;
+    background: #dfdfdf;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+form.login {
+    overflow: hidden;
+    padding: 25px 8.7% 10px;
+    -moz-box-shadow: inset 0 14px 25px -15px #000;
+    -webkit-box-shadow: inset 0 14px 25px -15px #000;
+    box-shadow: inset 0 14px 25px -15px #000;
+}
+
+.login-form h2 {
+    font: 24px/26px 'league_gothicregular', sans-serif;
+    margin: 0;
+    padding: 7px 17px 5px;
+    color: #fff;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-transform: uppercase;
+    background: #396e8e
+        url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5NmU4ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iIzMzNjg4OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzIyNTc3NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxOTRlNmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #396e8e 0%, #336888 29%, #225777 67%, #194e6e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #396e8e), color-stop(29%, #336888),
+        color-stop(67%, #225777), color-stop(100%, #194e6e));
+    background: -webkit-linear-gradient(top, #396e8e 0%, #336888 29%, #225777 67%, #194e6e 100%);
+    background: -o-linear-gradient(top, #396e8e 0%, #336888 29%, #225777 67%, #194e6e 100%);
+    background: -ms-linear-gradient(top, #396e8e 0%, #336888 29%, #225777 67%, #194e6e 100%);
+    background: linear-gradient(to bottom, #396e8e 0%, #336888 29%, #225777 67%, #194e6e 100%);
+}
+
+#main #content .login-form h2,.login-form h2 {
+    margin-top: -3px;
+}
+
+form.login .form-item {
+    margin: 0 0 7px;
+}
+
+form.login label {
+    font-family: "arial";
+    color: #363638;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 4px 0 0;
+    min-width: 77px;
+    text-align: right;
+    vertical-align: top;
+}
+
+form.login .form-item-checkbox label {
+    font-size: 11px;
+    line-height: 1;
+    margin-bottom: 9px;
+    max-width: 160px;
+    text-align: left;
+}
+
+form.login .form-item-text input {
+    border: 1px solid #9C9C9C;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4) inset;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 4px;
+    width: 179px;
+    color: #363638;
+}
+
+form.login .form-item-submit,form.login .form-item-checkbox {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    width: 195px;
+}
+
+form.login .form-item-submit .form-item {
+    margin: 0 0 5px;
+}
+
+form.login .form-item-submit label {
+    font-size: 10px;
+}
+
+form.login input[type="checkbox"] {
+    float: left;
+    height: 16px;
+    margin: 4px 5px 0 0;
+    width: 13px;
+}
+
+form.login .btn-box {
+    overflow: hidden;
+}
+
+form.login .form-item-submit input.form-submit {
+    border: 0 none;
+}
+
+form.login .form-item-submit input.form-submit,form.login .btn-box a {
+    background: linear-gradient(to bottom, #396E8E 0%, #336888 29%, #225777 67%, #194E6E 100%) repeat scroll 0 0 transparent;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font: 18px/20px 'league_gothicregular', sans-serif;
+    margin: 0 3px 0 0;
+    padding: 2px 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+body.login form.login {
+    padding-left: 10px;
+}
+
+/*header link*/
+
+/*welcome panel*/
+.loginNameText {
+    color: #FFFFFF;
+    font: 24px/26px 'league_gothicregular', sans-serif;
+    margin: 0 0 3px;
+    word-spacing: 2px;
+}
+
+.liStyle ul li a {
+    color: #3A5C78;
+    font: 24px/26px 'league_gothicregular', sans-serif;
+}
+
+.block .block-content {
+    padding: 8px 10px 3px 15px;
+    overflow: hidden;
+    text-transform: capitalize;
+    font: 16px/21px 'league_gothicregular', sans-serif;
+}
+
+#newsDetialsTitle span {
+    background: url("../../img/theme_one/bullet-1.png") no-repeat scroll left center transparent;
+    overflow: hidden;
+    padding: 0 0 0 9px;
+    font: 18px 'league_gothicregular', sans-serif;
+}
+
+.scollarBar {
+	overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+#newsForm label {
+    max-width: none;
+    width: 115px;
+}
+/*Calendar Event style css*/
+.detailEvent {
+    text-transform: uppercase;
+    color: #255979;
+    font-style: italic;
+    font-size: 11px;
+    padding: 0 0 0 14px;
+    margin: 0 0 0 7px;
+    font-weight: bold;
+    background: url(../../img/theme_one/bullet-2.png) no-repeat 0 3px;
+}
+
+/*Delete My Link Style css*/
+.deleteMyLinkTable label {
+    width: 70% !important;
+    text-align: left !important;
+    color: #336888 !important;
+    font: 16px/21px 'league_gothicregular', sans-serif !important;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.delMyLinkTableBoard {
+    border: 1px solid rgba(91, 93, 96, 0.7);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.delMylinkCheckAll label {
+    color: #336888 !important;
+    font: 16px/21px 'league_gothicregular', sans-serif !important;
+    text-align: center !important;
+}
+
+.delMylinkCheckAll {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.myLinkAddOneButtonStyle {
+    background-position: -32px -128px;
+    margin-top: -21px;
+    margin-right: 5px;
+}
+
+/* System Button */
+.button {
+    background-color: #396E8E;
+    border: 1px solid #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 60px;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.7s ease 0s;
+    font: 1.2em 'league_gothicregular', sans-serif;
+}
+
+#print-modal-content {
+    color: #6E6E6E;
+}
+#print-modal-content tbody {
+    color: #6E6E6E;
+}
+#print-modal-content label {
+    color: #6E6E6E;
+}
+
+.conferenceIconPostion {
+    margin: 0 2px;
+    float: left;
+}
+
+.conferenceDesc-margin {
+    margin-right: 20px;
+}
+
+#popup #calDescTable tbody tr td {
+    font-family: Arial !important;
+}
+
+/*wigets style*/
+#viewAll {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.linkInfoClass label {
+    text-align: left;
+    width: 3%;
+    vertical-align: bottom;
+}
+
+.processDialog textarea {
+    color: #5B585B;
+    background: #FFFFFF;
+}
+
+.processDialog label {
+    color: #333333;
+}
+
+/*Manager DashBoard Css*/
+a.dashBoard-email-icon {
+    width: 13px;
+    height: 0;
+    background: url(../../img/icons/dashBoardEmail.png);
+    padding-top: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+a.dashBoard-phone-icon {
+    width: 13px;
+    height: 0;
+    background: url(../../img/icons/dashBoardPhone.png);
+    padding-top: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.dashBoardMenu {
+    font: 18px/20px 'league_gothicregular', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+	margin-top:5px;
+}
+
+.dashBoardMenu ul.menu{
+	text-align: left !important;
+}
+
+.dashBoardMenu li {
+    background: url("../../img/theme_one/divider-black.png") no-repeat scroll 0 2px transparent !important;
+    display: inline-block;
+    padding: 0 5px 0 10px !important;
+    vertical-align: top;
+}
+
+.dashBoardMenu a {
+    border-right: 0px !important;
+}
+
+.dashBoardMenu a.active, .dashBoardMenu a:hover{
+    color: #FEF8F7;
+    text-decoration: none !important;
+}
+
+ .dashBoardMenu a.active{
+    color: #6FBCEB;
+ }
+
+.dashBoardMenu li:first-child {
+    background: none repeat scroll 0 0 transparent !important;
+}
+
+.dashBoardMenu li.last {
+    border-bottom: 0px solid #525457 !important;
+}
+
+div#dashBoadContent table tbody {
+    color: #255979;
+}
+
+div#dashBoadContent table tbody tr:nth-child(2n) {
+    background-color: #b0b0b0;
+}
+
+.dashBoardDivider {
+    background: url("../../img/theme_one/dashBoardDivider.png") no-repeat scroll center bottom transparent;
+    padding-bottom: 15px;
+}
+
+#dashBoadContent input {
+    color: #6E6E6E;
+}
+
+.orgChart  table tbody tr:nth-child(2n) {
+    background-color: transparent !important;
+}
+
+.orgChartImg {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    width: 85px;
+}
+
+.orgChartImg img {
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    width: auto;
+}
+
+.orgChartIcon a {
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 16px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin-right: -5px;
+}
+
+#dashBoadContent a.clock-icon {
+    display: inline-block;
+    width: 16px;
+    height: 0;
+    padding-top: 16px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: transparent url("../../img/orgChartClock.jpg") scroll no-repeat 0 0;
+}
+
+.emailIcon {
+    background-image: url("../../img/org/email.png");
+    width: 21px;
+}
+
+.homeIcon {
+    background-image: url("../../img/org/home.png");
+    padding-top: 18px;
+    width: 21px;
+}
+
+.worldIcon {
+    background-image: url("../../img/org/world.png");
+    padding-top: 21px;
+    width: 21px;
+}
+
+.navigateIcon {
+    background-image: url("../../img/org/compass.png");
+    width: 21px;
+    padding-top: 21px;
+}
+
+.orgEmployee {
+    font-weight: bold;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.suborIcon {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#dashBoadContent #format .ui-state-active {
+    color: #ACA8AA !important;
+}
+
+#dashBoadContent #format .ui-state-default {
+    font: 18px/1.3 'league_gothicregular', sans-serif;
+    font-weight: bold;
+}
+
+#dashBoadContent #format .ui-state-hover {
+    color: #1C94C4;
+}
+
+#dashBoadContent #format .ui-state-focus {
+    color: #1C94C4;
+}
+
+#dashBoadContent .suborJobTitle {
+    color: #656561;
+    font-weight: bold;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+#dashBoadContent .slide h3 {
+    font: 18px/1.3 'league_gothicregular', sans-serif;
+}
+
+.jOrgChart table thead tr th,.jOrgChart table tbody tr td {
+    padding: 0 !important;
+}
+
+.myOrganization table tbody tr {
+    cursor: default;
+}
+
+.myOrganization {
+    overflow: auto !important;
+}
+
+.myOrganization #format label {
+    border-radius: 0;
+    margin-right: 1px;
+}
+
+.subor {
+    height: 180px;
+    position: relative;
+    width: 85px;
+}
+
+.suborDepartmentTitle {
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.orgNavMenu {
+    border: 1px solid rgba(91, 93, 96, 0.7);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2) inset;
+    margin: 8px 8px 0 !important;
+    width: 75px;
+    height: auto;
+    font-weight: 600;
+}
+
+.sendEmailIcon {
+    background-image: url("../../img/org/email_send.png");
+    width: 21px;
+}
+
+.viewEmailIcon {
+    background-image: url("../../img/org/email_view.png");
+    width: 21px;
+}
+
+#dashBoadContent .opener:FIRST-CHILD {
+    margin-top: 0px;
+}
+
+#dashBoadContent .opener {
+    margin-top: 6px;
+}
+
+.organationPopup select {
+    width: auto !important;
+}
+
+.organationPopup a:link {
+    background: none !important;
+    font-family: arial !important;
+}
+
+.organationPopup .download a:link {
+    font-family: arial !important;
+}
+
+.mailInfoClass .textLength {
+    width: 80% !important;
+    text-align: left !important;
+}
+
+.mailInfoClass .content {
+    border: 1px solid rgba(91, 93, 96, 0.7);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2) inset;
+    max-width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    min-height: 50px;
+    padding: 10px;
+    margin-left: 85px;
+    font-family: arial;
+}
+
+.mailInfoClass a:link {
+    overflow: visible;
+    font: 12px arial !important;
+}
+
+.mailInfoClass table {
+    width: 80%;
+}
+
+#msgListTable span {
+    line-height: 12px;
+}
+/*end manager dashboard*/
+.collTabH2 h2 {
+    font-size: 21px;
+}
+
+/*Collaboration-documents*/
+.Docu_search .button {
+    padding: 2px;
+    min-width: 52px;
+    line-height: 0.9
+}
+
+#activity ul.menu li {
+    min-width: 10px;
+}
+
+.downloadDocfiles {
+    background:url(../../img/wordIcon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+#collaborationSearch a.modalCloseImg {
+    background: url("../../img/closeicon.png") no-repeat 0 0 / 60%;
+    cursor: pointer;
+    display: inline;
+    height: 16px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 16px;
+    line-height:16px;
+}
+
+/*Collaboration_Forum css*/
+.postMain {
+    background-color: #4B4B4B;
+    border-bottom: 5px solid #666666;
+}
+
+.postLeft {
+    width: 20%;
+    padding-top: 20px;
+}
+
+.postRight {
+    font-size: 14px;
+    font-family: arial;
+    width: 75%;
+    box-shadow: inset -3px -5px 25px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0 !important;
+    padding: 10px;
+    min-height: 200px;
+}
+
+.forumHead {
+    border-bottom: 1px dashed #B3B1B2;
+    padding: 2px 5px 7px 2px;
+    color: #fff;
+}
+
+.forumTitle h1 {
+    font-size: 1.7em;
+    line-height: 0;
+    padding-left: 10px;
+}
+
+.forumTitle {
+    background-color: #3A5C78;
+    color: #fff;
+}
+
+
+.forum_view {
+    width: 20%;
+    line-height: 36px;
+    padding: 0 12px;
+}
+
+.forumHeadR {
+    width: 75%;
+    box-shadow: 0px 0px 16px 0 rgba(0, 0, 0, 0.2) inset;
+    padding: 0 10px;
+}
+
+.forumEmployee {
+    margin: 10px auto;
+    width: 100px;
+    text-align: center;
+}
+
+#ReplyShowBoxCon {
+    background: #555;
+    padding: 15px;
+}
+
+#forumFoldReply {
+    background: #555;
+    padding: 8px 10px !important
+}
+
+.replayInput {
+    width: 88%;
+}
+
+.subReplaySpan {
+    font-size: 30px;
+    font-weight: bold;
+    color: #6DBDEB;
+    line-height: 30px;
+}
+
+.subReplay {
+    border-bottom: 1px dotted #BBBBBB;
+    padding: 10px 0 0;
+}
+
+.forumMenu {
+    display: block;
+    text-align: right;
+    margin: 10px 0 8px;
+}
+
+.forumMenu li {
+    padding: 0 12px 0 3px;
+    display: inline-block;
+}
+
+.leftQuotation {
+    padding:5px 0 0 18px;
+    border-left:1px solid #808080;
+}
+
+.leftQuotationOne {
+    padding:0 0 0 10px;
+    height:20px;
+    width:20px;
+}
+.quoteFont{
+	font-size: 12px ;
+	color:#DDD;
+	margin:0;
+}
+
+/*end Collaboration_Forum css*/
+
+/* Send email */
+.emailinputwidth {
+    width: 30%;
+    min-width: 180px;
+}
+
+.email_individual_label {
+    line-height: 24px;
+    margin-right: 10%;
+}
+
+.email_recipients_position {
+    width: 30%;
+    min-width: 100px;
+}
+
+.email_tableHeightScroll {
+    height: auto;
+    max-height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.email_copymemail {
+    position: relative;
+    bottom: 13px;
+    right: 10px;
+}
+/* groupMember */
+.addNew {
+    background-image: url(../../img/person-add.png);
+    display: inline-block;
+    width: 35px;
+    height: 36px;
+}
+
+.removeMember {
+    background-image: url(../../img/person-min.png);
+    display: inline-block;
+    width: 35px;
+    height: 36px;
+}
+
+.viewLess {
+    display: inline-block;
+    background-image: url("../../img/view_less.png");
+    width: 35px;
+    height: 35px;
+}
+
+.viewMore {
+    background-image: url("../../img/view_more.png");
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.groupMemberContentent {
+    text-align: center;
+    line-height: 18px;
+    width: 150px;
+}
+
+.groupMemberContentent span {
+    display: inline-block;
+    line-height: 18px !important;
+}
+
+.groupMemberContentent strong {
+    font-size: 20px;
+}
+
+.groupMemberContentent .menu {
+    margin-left: 7px !important;
+    display: inline-block !important;
+}
+
+.groupMemberContentent .menu li {
+    min-width: 15px;
+    padding: 0 8px 0 3px !important;
+}
+
+.groupMemberContentent .widgetImage {
+	width: 100px;
+	height:100px;
+	overflow:hidden;
+}
+
+.BlankBackground {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.detailInfoCon {
+	min-height: 55px;
+}
+
+.groupMember_bioimage {
+    float: none !important;
+    margin: 0 auto !important;
+    position: relative;
+    border:none !important;
+}
+
+.groupMember_bioimage:hover{
+	cursor:pointer;
+}
+
+.GroupMemberIcon ul {
+    display: inline-block !important;
+}
+
+.gallery.custom-state-active {
+    background: #eee;
+}
+
+.gallery figure {
+    float: left;
+    width: 96px;
+    padding: 0.4em;
+    margin: 0 0.4em 0.4em 0;
+    text-align: center;
+    position: relative;
+}
+
+.gallery figure h5 {
+    margin: 0 0 0.4em;
+    cursor: move;
+}
+
+.gallery figure a {
+    float: right;
+}
+
+.gallery figure a.ui-icon-zoomin {
+    float: left;
+}
+
+.gallery figure img {
+    width: 100%;
+    cursor: move;
+}
+
+#trash {
+    min-height: 14em;
+    background: none;
+}
+
+#trash h4 {
+    line-height: 16px;
+    margin: 0 0 0.4em;
+}
+
+#trash h4 .ui-icon {
+    float: left;
+}
+
+#addMember {
+    float: right;
+    width: 32%;
+    min-height: 18em;
+    padding: 1%;
+}
+
+#addMember h4 {
+    line-height: 16px;
+    margin: 0 0 0.4em;
+}
+
+#addMember h4 .ui-icon {
+    float: left;
+}
+
+#addMember .gallery h5 {
+    display: none;
+}
+
+#trashGallery {
+    position: relative;
+    min-height: 230px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.block.ofh {
+    padding: 15px 10px 15px 15px;
+    min-height: 300px;
+}
+
+#addNewSelector .menu li {
+    float: none;
+    min-width: 10px;
+}
+
+.detailInfoCon {
+    min-height: 55px;
+}
+
+.stats.mt {
+    margin-top: 10px;
+}
+
+.employeeName {
+    display: block;
+    text-align: center;
+}
+
+#jToolTipsBox {
+	position: absolute;
+	border: 2px solid #39F;
+	background: #FFF;
+	max-width: 300px;
+	padding: 5px;
+	z-index:1000;
+}
+
+#membersDisplayDiv .empGroupChooserForEmpPage {
+	width: auto;
+}
+
+.groupMemeberMenu {
+	margin-bottom:0 !important;
+}
+
+/************* add by Candy for collaboration*********************/
+#collaborationTabSet span {
+    line-height: 17px;
+}
+
+#collaborationTabSet .opener:FIRST-CHILD {
+    margin-top: 0px;
+}
+
+#collaborationTabSet .opener {
+    margin-top: 6px;
+}
+
+#collaborationDocuments .upload {
+    margin-left: 4px;
+    width: 15% !important;
+}
+
+#collaborationDocuments .download {
+    float: left;
+    width: 65% !important;
+}
+
+#collaborationDocuments #downLoadAreaCol_doc {
+    vertical-align: middle;
+}
+
+#collaborationTabSet .upload {
+    float: left;
+    width: 60%;
+}
+
+#collaborationTabSet .download {
+    float: left;
+    width: 35%;
+}
+
+#collaborationTabSet .bar {
+    height: 7px;
+    background: green;
+}
+
+#collaborationTabSet #file_browse_here {
+	font-size: 12px;
+	width: 13%;
+	display: inline-block;
+	/* vertical-align: top; */
+	/* padding-top: 0; */
+	font-family: arial, sans-serif;
+	color: #5B585B;
+	font-weight: bold;
+}
+
+/********************define file search result pop up css************************/
+.downloadfiles, .downloadDocuments {
+    background:url(../../img/pdficon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+.downloadPDF{
+	background:url(../../img/pdficon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+.downloadDocument{
+	background:url(../../img/docicon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+.downloadPPT{
+	background:url(../../img/ppticon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+.downloadXLS{
+	background:url(../../img/xlsicon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+#popup.archievefile a:link {
+    text-transform: none;
+    font: 12px arial;
+}
+
+#myArchiveTabSet .opener:FIRST-CHILD {
+	margin-top: 0px;
+}
+
+#myArchiveTabSet .opener {
+	margin-top: 6px;
+}
+
+.shadowForTop{
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: 7px;
+    margin-top: -12px;
+}
+
+
+.shadowForSub{
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: 8px;
+    margin-top: 24px;
+}
+.textCapitalize{
+    text-transform: capitalize
+}
+
+/********************define file search result pop up css************************/
+
+
+#popup.archievefile a:link {
+    text-transform: none;
+    font: 12px arial;
+}
+
+#myArchiveTabSet .opener:FIRST-CHILD {
+	margin-top: 0px;
+}
+
+#myArchiveTabSet .opener {
+	margin-top: 6px;
+}
+
+.shadowForTop{
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: 7px;
+    margin-top: -12px;
+}
+
+
+.shadowForSub{
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+/* For Error Page */
+.ErrorPageTxt2 {
+    padding: 10% 10%;
+}
+.ErrorPageTxt2 a{
+    font-size:30px;
+    color:white;
+}
+.unify {
+	background: url("../../img/titleborder_bg.png") no-repeat scroll 0 14px transparent;
+    font-size: 38px;
+    margin: 20px auto 0 !important;
+    text-align:center;
+    color:#E2E2E2;
+    line-height:30px;
+}
+.oops {
+	min-height: 250px;
+    padding: 0 0 20px 225px;
+    text-align: left;
+    font-size:20px;
+    background:url(../../img/404.png) no-repeat 5% 0; 
+    margin-top:74px;
+    line-height:26px;
+}
+.oopsServerError {
+	min-height: 250px;
+    padding: 0 325px 20px 20px;
+    text-align: left;
+    font-size:20px;
+    background:url(../../img/500.png) no-repeat 91% 0; 
+    margin-top:74px;
+    line-height:26px;
+}
+
+.oopsAccessDenied {
+	min-height: 250px;
+    padding: 0 0 20px 260px;
+    text-align: left;
+    font-size:20px;
+    background:url(../../img/403.png) no-repeat 5% 0; 
+    margin-top:74px;
+    line-height:26px;
+}
+
+/*position profile*/
+.checkboxWa {
+    width: 10%;
+    line-height:19px;
+}
+
+.positionProfile label {
+    width: 22%;
+}
+
+.positionProfile input[type="text"],.positionProfile select {
+    width: 40%;
+}
+
+.positionProfile input[type="checkbox"] {
+    vertical-align: bottom;
+}
+
+.inputWa, .selectWa {
+    width: 21% !important;
+    margin-right: 15px !important;
+}
+
+.inputHa {
+    height: 30px;
+}
+
+.spanButtona {
+    margin-left: 21px;
+    display: inline-block;
+    width: 23%;
+}
+
+.btn {
+    line-height: 15px;
+    padding: 2px 5px;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: 0;
+}
+
+.caret {
+    margin-top: 6px;
+}
+
+.checkboxTitle {
+    border-bottom: 1px solid #555;
+    width: 10%;
+    text-align: center;
+    margin-right: 4%;
+}
+
+#addField {
+	display: block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: 63%;
+}
+
+.sidenav ul li.active{
+    background: linear-gradient(to bottom, #396E8E 0%, #336888 29%, #225777 67%, #194E6E 100%) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+/*end position profile*/
+
+/************* add by Candy for positionProfile in aboutMe page********************/
+
+#positionProfileContent {
+   color: #CEC9CC; 
+}
+#positionProfileContent span {
+    color: #FFFFFF;
+    display:block;
+}
+.positionProfilePrint {
+   color: #999; 
+}
+.positionProfilePrint span {
+    color: #6E6E6E;
+    display:inline-block;
+}
+.positionProfilePrint h2 {
+    color: #6E6E6E;
+}
+
+.aboutMePrintFont{
+    font-family: arial;
+}
+
+
+
+#aboutMePrintStyle .menu li {
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+#aboutMePrintStyle .menu li label,.menu li span {
+    width: 160px;
+    display: inline-block;
+}
+
+/*For Configuration Page*/
+
+.tabContentStyle {
+	border: 0px solid #ABADB3 !important;
+	width: 100%;
+	background-color: transparent;
+	margin: 0;
+}
+
+.tabContentEditStyle {
+	border: 1px solid #ABADB3;
+	width: 100%;
+	background-color: transparent;
+	margin: 0;
+	color: #ffffff;
+}
+
+#logOutput {
+	width : 99%;	
+}
+
+#logOutput input{
+    font-size: 14px;
+	color: #fff;
+    width: 99%;
+}
+.logOutPutText {
+	font-family: Arial;
+	font-size:14px;
+	padding-top:7px !important;
+	color:#FFF9FC;
+}
+
+.appender input {
+	width: 10% !important;
+}
+ 
+table.configureForm tbody tr:nth-child(2n)  {
+    position:static !important;        
+}
+table.configureForm.tablesorter tbody td  {
+    position:static !important;        
+}
+
+.downloadPdffiles {
+    background:url(../../img/pdficon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+
+.archivedPdfFiles{
+    background:url(../../img/pdficon.png) no-repeat 0 0;
+    padding:0 0 2px 25px;
+}
+#groupGoalTable li {
+    margin: 0;
+}
+
+.homeGadgetMouseoverModel{
+    filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.newtab-control {
+    background:url("../../img/gadget_close.png") no-repeat 0 0;
+    border: none;
+    height: 21px;
+    padding: 0px;
+    width: 22px;
+    float: right;
+    margin: -1px -4px 0 0;
+}
+
+.newtab-control-block {
+    background-position: -168px -1px;
+}
+
+#gadget_WELCOMEPANEL .newtab-control{
+    margin-right: 7px;
+}
+
+#gadget_HOMETABSETNAVIGATOR .newtab-control{
+    margin-right: -9px;
+}
+
+.deleteGadgetButtonStyle{
+    background-image:url("../../img/ui-icons_ffffff_256x240.png");
+	height:16px !important;
+    float: right;
+	background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px; 
+    width: 16px;
+}
+
+/*************skill search********************/
+.searchResItem{
+    background: url("../../img/theme_one/divider-3.png") no-repeat scroll 50% bottom transparent;
+    margin: 0 0 14px;
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+.searchResContent{
+ display: block;
+ padding: 0.5em 0.5em 0.5em 0;
+}
+#skillSearchPageContent .opener {
+    margin-top: 6px;
+}
+.searchFixHeight{
+	max-height: 500px;
+	overflow: auto !important;
+}
+.ItemProfile .job-title {
+	margin-left:8px;
+}
+.ItemProfile .employee-name {
+	margin-top:0px;
+}
+.ItemProfile .stats {
+	margin-left:8px;
+}
+.ItemProfile .stats li span.value{
+	padding:0;
+}
+
+.ItemProfile .stats li label{
+	color:#333;
+}
+
+.form-text {
+	color:#3a5c78 !important;
+}
+.searchHighLight{
+	background: #B3D4FC;
+}
+
+
+/* Gadget Permission Configure Page */
+.minWidth150 {
+    min-width: 150px;
+}
+
+.minWidth100 {
+    min-width: 100px;
+}
+
+.permissionDiv {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.permissionDiv span {
+    margin-right: 90px;
+}
+
+#headers label {
+    margin-left: 6px;
+    min-width: 98px;
+    text-align: center;
+}
+
+/*  End Gadget Permission Configure Page */
+
+
+/*style for whizzywig js*/
+.wzCtrl {
+	margin-right:-4px;
+}
+
+/*welcome panel*/
+.welcomePart {
+	float: left;
+	height: auto;
+}
+
+.settingPart {
+	float: right;
+	width: 25%;
+    line-height: 1.5;
+}
+
+.welcome ul li a{
+	color:#333333;
+}
+
+#ul_myEmployeeSelector li{
+ background:none;
+ float:none;
+ width:auto;
+}
+
+.welcomePart a{
+	color:#FFFFFF;
+}
+
+.welcomePart
+a:hover,
+a:active,
+a:focus {
+ color:#6FBCEB;
+ text-decoration: underline;
+}
+
+.welcomeLink aHeaderHover{
+	text-decoration:none;
+}
+
+.WELCOMEPANEL{
+    border: none;
+    box-shadow: none;
+}
+
+.userList input, .userList label, .userList select {
+    display: inline-block;
+    width: auto;
+    padding: 2px;
+    padding-right:3px;
+    margin-right: 10px;
+}
+
+.searchbutton{
+    background-color: #396E8E;
+    border: 1px solid #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 60px;
+    padding: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.7s ease 0s;
+    font: 1.1em 'league_gothicregular', sans-serif;
+    height:22px
+}
+
+#bottomExtruder .ext_wrapper .content>.text {
+    height: 60px !important;
+    overflow: hidden !important;
+}
+
+#bottomExtruder .ext_wrapper ul.themeTypeUl li {
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#bottomExtruder .ext_wrapper ul.themeTypeUl li input{
+    vertical-align: baseline;
+}
+
+#leftExtruder .ext_wrapper .flap .flapLabel .flip_label{
+    height: 249px !important;
+}
+
+#rightExtruder .ext_wrapper .flap .flapLabel .flip_label{
+    height: 212px !important;
+}
+
+.applyButtonStyle{
+    margin-top: 12px !important;
+}
+
+/* Form print preview title style*/
+.formPrintTitle{
+    font-size:40px;
+    font-weight:bold;
+    color:#D2691E;
+}
+
+/* BreakingNews */
+
+.breakingNewsIcon{
+    width: 169px;
+    height: 250px;
+}
+
+.breakingNewsTitleLeft{
+    width: 211px;
+    align-right  
+}
+.breakingNewsTitleRight{
+    width: 211px;
+   
+}
+
+.positionChange {
+    left:0px !important;
+}
+
+/* Employee Info Layout */
+.employeeCommon table tr td{
+    min-width: 100px;
+}
+
+.employeeCommon table tr td:FIRST-CHILD{
+    min-width: 145px;
+}
+

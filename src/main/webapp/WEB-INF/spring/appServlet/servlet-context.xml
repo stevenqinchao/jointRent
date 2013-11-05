@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+    
+    
+    <!-- Spring mail -->
+    <beans:bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <beans:property name="host" value="smtp.gmail.com" />
+        <beans:property name="port" value="587" />
+        <beans:property name="username" value="username" />
+        <beans:property name="password" value="password" />
+     
+        <beans:property name="javaMailProperties">
+           <beans:props>
+                  <beans:prop key="mail.smtp.auth">true</beans:prop>
+                  <beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
+               </beans:props>
+        </beans:property>
+    </beans:bean>
+ 
+    <!-- <beans:bean id="mailMail" class="com.unique.jointrent.MailMail">
+        <beans:property name="mailSender" ref="mailSender" />
+    </beans:bean> -->
+
+    <!--防止css js img 文件被拦截 
+    <resources mapping="/images/**" location="/images/" cache-period="31556926" />
+    <resources mapping="/js/**" location="/js/" cache-period="31556926" />
+    <resources mapping="/css/**" location="/css/" cache-period="31556926" /> -->
+    
+    <!-- 加入集中消息文件的配置 //也可以用来支持进行国际化-->
+    <beans:bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <beans:property name="basenames" value="/WEB-INF/message/static_message , /WEB-INF/message/dynamic_message , /WEB-INF/message/validation_message" />
+        <beans:property name="cacheSeconds" value="2"></beans:property>
+    </beans:bean>
+
+    <!-- 能够让controller返回json格式的配置   //当然也可以自己手动拼json或者用工具类生成json 将拼好的json串写到页面上  然后再返回页面-->
+    <beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <beans:property name="messageConverters">
+            <beans:list>
+                <beans:ref bean="mappingJacksonHttpMessageConverter" />
+            </beans:list>
+        </beans:property>
+    </beans:bean>
+
+    <beans:bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+        <beans:property name="supportedMediaTypes">
+            <beans:list>
+                <beans:value>application/json;charset=UTF-8</beans:value>
+            </beans:list>
+        </beans:property>
+    </beans:bean>
+
+    <!-- 加入能够进行前端文件访问的配置  不适用默认的视图解释类-->
+    <beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView" />
+    </beans:bean>
+
+    <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+        <beans:property name="definitions">
+            <beans:list>
+                <beans:value>/WEB-INF/tiles-defs/templates.xml</beans:value>
+            </beans:list>
+        </beans:property>
+    </beans:bean>
+
+
+    <!-- 加入interceptor -->
+    <interceptors>
+        <interceptor>
+            <mapping path="/extjspie" />
+            <beans:bean id="MeasurementInterceptor" class="com.unique.jointrent.util.MeasurementInterceptor">
+                <!-- <beans:property name="paramName" value="theme" /> -->
+            </beans:bean>
+        </interceptor>
+    </interceptors>
+
+    <context:component-scan base-package="com.unique.jointrent.controller" />
+
+	
+	
+	
+</beans:beans>

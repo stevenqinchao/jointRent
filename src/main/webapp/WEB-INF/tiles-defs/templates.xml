@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <!-- <definition name="pieData" template="/WEB-INF/views/json.jsp"></definition> -->
+    <definition name="base" template="/WEB-INF/views/base.jsp"></definition>
+    <definition name="test" template="/WEB-INF/views/test.jsp"></definition>
+    
+    <definition name="extjspie" template="/WEB-INF/views/chart/pie1.jsp"></definition>
+    <definition name="jquerypie" template="/WEB-INF/views/chart/pie.jsp"></definition>
+    
+    <definition name="customerUI" template="/WEB-INF/views/customerUI.jsp"></definition>
+    
+    
+    <definition name="bookmarks" template="/WEB-INF/views/bookmarks.html"></definition>
+
+</tiles-definitions>
