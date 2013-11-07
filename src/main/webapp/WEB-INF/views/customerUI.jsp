@@ -21,7 +21,7 @@
 <script>
 
 $(document).ready(function(){
-   $('.date').mask('#,#,a', {reverse: true, maxlength: false});
+   $('.date').formatmask("");
 });
 
 </script>

@@ -106,7 +106,7 @@ public class ChartController {
 
     @RequestMapping(value = "/pieData")
     @ResponseBody
-    public JSONResult pieData(Model model , HttpServletRequest request) throws Exception{
+    public Object pieData(Model model , HttpServletRequest request) throws Exception{
         // TODO Auto-generated method stub
         
 /*        try {Thread.sleep(10000);}
@@ -144,11 +144,11 @@ public class ChartController {
             return "{success:false}";
         }*/
         
-        JSONResult jsonResult = new JSONResult();
-        jsonResult.setSuccess(true);
+        /*JSONResult jsonResult = new JSONResult();
+        jsonResult.setSuccess(true);*/
         
 
-        return jsonResult;
+        return empList;
     }
     
     
