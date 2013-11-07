@@ -16,5 +16,9 @@
     
     
     <definition name="bookmarks" template="/WEB-INF/views/bookmarks.html"></definition>
+    
+    <definition name="error-business" template="/WEB-INF/views/error-business.html"></definition>
+    <definition name="error-parameter" template="/WEB-INF/views/error-parameter.html"></definition>
+    <definition name="error" template="/WEB-INF/views/error.html"></definition>
 
 </tiles-definitions>

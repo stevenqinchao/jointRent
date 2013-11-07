@@ -12,17 +12,21 @@
     <script src="resources/js/jquery/ui/jquery.ui.core.js"></script>
     <script src="resources/js/jquery/ui/jquery-ui.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="resources/js/flexigrid/css/flexigrid.css">
+    <link rel="stylesheet" typ
+    e="text/css" href="resources/js/flexigrid/css/flexigrid.css">
     <script type="text/javascript" src="resources/js/flexigrid/js/flexigrid.js"></script>
     
 
 <script>
 
 $(document).ready(function(){
-/*     $.get("pieData", function(data) {
-        $.each(data,function(InfoIndex,Info){
-        });
-    }); */
+	$.get("pieData", function(data) {
+        if(data.success){
+            
+        }else{
+            alert(data);
+        }
+    }); 
     
     $("#flex1").flexigrid({
     	url: 'pieData',
@@ -67,6 +71,7 @@ $(document).ready(function(){
 <body>
 
 <table id="flex1" style="display:none"></table>
+<div id="ajaxreturn"></div>
 </body>
 </html>
 

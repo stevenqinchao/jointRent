@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -14,8 +15,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.unique.jointrent.model.User;
+import com.unique.jointrent.service.UserService;
+import com.unique.jointrent.service.impl.UserServiceImpl;
+import com.unique.jointrent.util.BusinessException;
+import com.unique.jointrent.util.JSONResult;
 
 
 @Controller
@@ -23,6 +29,8 @@ public class ChartController {
 
     private static final Logger logger = LoggerFactory.getLogger(ChartController.class);
 
+    @Resource
+    private UserService userService;
     /**
      * method description goes here
      * 
@@ -63,19 +71,16 @@ public class ChartController {
     }
     
     @RequestMapping(value = "/customerUI")
-    public String customerUI(Model model) {
+    public String customerUI(Model model) throws Exception{
         // TODO Auto-generated method stub
-        User OrganizationalGoal = new User();
-        OrganizationalGoal.setName("test");
-        model.addAttribute( "OrganizationalGoal" ,  OrganizationalGoal);
         return "customerUI";
 
     }
     
     @RequestMapping(value = "/bookmarks")
-    public String bookmarks(Model model) {
+    public ModelAndView bookmarks(Model model) {
         // TODO Auto-generated method stub
-        return "bookmarks";
+        return new ModelAndView("bookmarks");
 
     }
     
@@ -101,7 +106,7 @@ public class ChartController {
 
     @RequestMapping(value = "/pieData")
     @ResponseBody
-    public Object pieData(Model model , HttpServletRequest request) {
+    public JSONResult pieData(Model model , HttpServletRequest request) throws Exception{
         // TODO Auto-generated method stub
         
 /*        try {Thread.sleep(10000);}
@@ -133,8 +138,38 @@ public class ChartController {
         emp4.setData1(4);
         empList.add(emp4);
         
+        //try{
+           //userService.exception();   
+        /*}catch(Exception e){
+            return "{success:false}";
+        }*/
+        
+        JSONResult jsonResult = new JSONResult();
+        jsonResult.setSuccess(true);
+        
 
-        return empList;
+        return jsonResult;
+    }
+    
+    
+    @RequestMapping(value = "/testController")
+    public void testController(Model model) throws Exception{
+        // TODO Auto-generated method stub
+        throw new BusinessException("30", "controller");
+        
+    }
+    
+    @RequestMapping(value = "/testService")
+    public void testService(Model model) throws Exception{
+        // TODO Auto-generated method stub
+        userService.exception();
+        
+    }
+    
+    @RequestMapping(value = "/testDao")
+    public void testDao(Model model) throws Exception{
+        // TODO Auto-generated method stub
+        userService.exceptionDao();
     }
 
 }

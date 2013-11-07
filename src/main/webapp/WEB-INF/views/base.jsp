@@ -37,18 +37,9 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-    
-    $('.datepicker').pickadate({
-        format : 'mm/dd/yyyy',
-        formatSubmit : 'mm/dd/yyyy'
+    $.get("pieData", function(data) {
+        $("#error").html(data);
     });
-	
-	$("#showform").click(function(){
-	    $.get("customerUI",function(data){
-	        $.modal(data);
-		});
-	    
-	});
 });
 </script>
 
@@ -56,13 +47,9 @@ $(document).ready(function(){
 
 <body>
 <p>
-                <label for="date">date</label> <span class="displayib"><input
-                    type="text" class="datepicker" name="dueDate" id="dueDate" /></span>
-            </p>
 
-<input type="button" value="show form" id="showform"></input>
-
-<div id= "formdiv">
+<h2>this is a test!</h2>
+<div id= "error" style="border: 1px solid black;">
 </div>
 
 </body>
